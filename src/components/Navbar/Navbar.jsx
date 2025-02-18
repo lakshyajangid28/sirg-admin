@@ -65,7 +65,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                 <a className="item" href="#people" onClick={handleScroll}><i className="users icon"></i> People</a>
                 <a className="item" href="#project" onClick={handleScroll}><i className="tasks icon"></i> Project</a>
                 <a className="item" href="#achievements" onClick={handleScroll}><i className="trophy icon"></i> Achievements</a>
-                <a className="item" href="#publications" onClick={handleScroll}><i class="newspaper outline icon"></i> Publications</a>
+                <a className="item" href="#publications" onClick={handleScroll}><i className="newspaper outline icon"></i> Publications</a>
                 <a className="item" href="#positions" onClick={handleScroll}><i className="briefcase icon"></i> Positions</a>
                 <a className="item" href="#teaching" onClick={handleScroll}><i className="book icon"></i> Teaching</a>
                 <a className="item" href="#contact" onClick={handleScroll}><i className="phone icon"></i> Contact</a>
@@ -86,7 +86,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
               <a className="item" href="#people" onClick={handleScroll}><i className="users icon"></i> People</a>
               <a className="item" href="#project" onClick={handleScroll}><i className="tasks icon"></i> Project</a>
               <a className="item" href="#achievements" onClick={handleScroll}><i className="trophy icon"></i> Achievements</a>
-              <a className="item" href="#publications" onClick={handleScroll}><i class="newspaper outline icon"></i> Publications</a>
+              <a className="item" href="#publications" onClick={handleScroll}><i className="newspaper outline icon"></i> Publications</a>
               <a className="item" href="#positions" onClick={handleScroll}><i className="briefcase icon"></i> Positions</a>
               <a className="item" href="#teaching" onClick={handleScroll}><i className="book icon"></i> Teaching</a>
               <a className="item" href="#contact" onClick={handleScroll}><i className="phone icon"></i> Contact</a>
