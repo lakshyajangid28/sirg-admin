@@ -118,7 +118,7 @@ const Publications = () => {
         ) : (
           publications.map((ele) => (
             <div key={ele.id} className="publication-item">
-              <div className="ui medium header">{ele.type}</div>
+              <div className="ui large header">{ele.type}</div>
               <div className="ui buttons">
                 <button
                   className="ui button blue"

@@ -2,7 +2,7 @@ import React from "react";
 import './FlipCard.css';
 
 const FlipCard = ({ body }) => {
-  return (
+  return (  
     <div className="flip-card">
       <div className="flip-card-inner">
         {/* Front side of the card */}
@@ -17,7 +17,7 @@ const FlipCard = ({ body }) => {
         {/* Back side of the card */}
         <div className="flip-card-back">
           {body.map((ele, index) => {
-            return <li key={index}>{ele}</li>
+            return <p key={index}>{ele}</p>;
           })}
         </div>
       </div>

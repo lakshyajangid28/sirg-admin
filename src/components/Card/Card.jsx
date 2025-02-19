@@ -1,11 +1,11 @@
 import React from "react";
 
-const Card = ({ person }) => {
+const Card = ({ person, onEdit, onDelete }) => {
   return (
     <div className="ui card">
       <div className="image">
         {person.image ? (
-          <img src={`/${person.image}`} alt="Person" />
+          <img src={person.image} alt="Person" />
         ) : (
           <img src="src/assets/image.png" alt="Default" />
         )}
@@ -13,10 +13,18 @@ const Card = ({ person }) => {
       <div className="content">
         <div className="ui medium header">{person.name}</div>
         <div className="meta">
-          {person.category.charAt(0).toUpperCase() + person.category.slice(1)}
+          {person.category?.charAt(0).toUpperCase() + person.category?.slice(1)}
           <br />
           {person.description}
         </div>
+      </div>
+      <div className="extra content">
+        <button className="ui button blue" onClick={onEdit}>
+          Edit
+        </button>
+        <button className="ui button red" onClick={onDelete}>
+          Delete
+        </button>
       </div>
     </div>
   );

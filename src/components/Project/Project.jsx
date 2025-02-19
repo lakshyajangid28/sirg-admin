@@ -98,7 +98,7 @@ const Project = () => {
         ) : (
           projects.map((ele) => (
             <div key={ele.id} className="project-item">
-              <div className="ui header">{ele.project_type}</div>
+              <div className="ui large header">{ele.project_type}</div>
               <div className="ui buttons">
                 <button
                   className="ui button blue"
@@ -113,11 +113,10 @@ const Project = () => {
                   Delete Project
                 </button>
               </div>
-              <br />
-              <br />
+              <br /><br />
             </div>
           ))
-        )};
+        )}
         <div className="actions">
           <button className="ui button blue" onClick={() => openPopup()}>
             Add New Project

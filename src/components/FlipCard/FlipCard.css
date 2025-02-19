@@ -28,21 +28,22 @@
   height: 100%;
   backface-visibility: hidden;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
 
+.flip-card p {
+  margin: 0px;
+  padding: 1.5px;
+  font-size: 15px; 
+}
+
 .flip-card-front {
-  background-color: white;
+  background-color: rgba(128, 204, 118, 0.404);
 }
 
 .flip-card-back {
   transform: rotateY(180deg);
-}
-
-@media (max-width: 600px) {
-  .flip-card {
-    width: 150px;
-    height: 150px;
-  }
+  background-color: rgba(128, 204, 118, 0.404);
+  color: brown;
 }
